@@ -20,7 +20,11 @@ driver:
 
 provisioner:
   name: chef_zero
+  product_name: chef
+  product_version: 14.12.3
   client_rb:
+    chef_license: accept
+  attributes:
     chef_license: accept
 
 verifier:
