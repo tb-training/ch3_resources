@@ -35,7 +35,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[ch4_webserver::default]
+      - recipe[ch3_resources::default]
     verifier:
       inspec_tests:
         - test/integration/default
