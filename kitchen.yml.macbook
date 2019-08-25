@@ -14,9 +14,6 @@ provisioner:
   client_rb:
     chef_license: accept
     local_mode: true 
-  attributes:
-    chef_license: accept
-
 verifier:
   name: inspec
 
@@ -38,7 +35,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[ch3_resources::default]
+      - recipe[ch4_webserver::default]
     verifier:
       inspec_tests:
         - test/integration/default
