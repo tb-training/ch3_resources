@@ -5,6 +5,5 @@
 # Copyright:: 2019, The Authors, All Rights Reserved.
 file '/tmp/hello.txt' do
   content 'Hello, world!'
-#  rights :read, 'Everyone'
   action :create
 end
